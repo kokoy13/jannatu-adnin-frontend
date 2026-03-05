@@ -38,7 +38,7 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: "/gallery",
+    path: "/galeri",
     element: (
       // <ProtectedRoute>
         <Gallery/>
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: "/article",
+    path: "/artikel",
     element: (
       // <ProtectedRoute>
         <Article/>
@@ -54,7 +54,7 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: "/about",
+    path: "/tentangkami",
     element: (
       // <ProtectedRoute>
         <About/>
@@ -62,7 +62,7 @@ const router = createBrowserRouter([
     )
   },
   {
-    path: "/announcement",
+    path: "/pengumuman",
     element: (
       // <ProtectedRoute>
         <Announcement/>
