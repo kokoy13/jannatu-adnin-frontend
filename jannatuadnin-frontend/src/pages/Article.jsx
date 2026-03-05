@@ -1,0 +1,160 @@
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
+
+const Article = () =>{
+    return(
+        <div className="bg-white text-gray-800">
+            {/* <!-- Navigation --> */}
+            <Navbar></Navbar>
+
+            {/* <!-- Hero Section --> */}
+            <section className="pt-24 pb-16 bg-gradient-to-b from-purple-50 to-white islamic-pattern">
+                <div className="max-w-6xl mx-auto px-4 text-center">
+                    <h1 className="text-5xl font-bold text-purple-900 mb-6">Artikel & Wawasan</h1>
+                    <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+                        Membaca dan memahami Al-Qur'an melalui artikel-artikel mendalam dan penuh manfaat
+                    </p>
+                </div>
+            </section>
+
+            {/* <!-- Articles Grid --> */}
+            <section className="py-20 bg-white">
+                <div className="max-w-6xl mx-auto px-4">
+                    {/* <!-- Featured Article --> */}
+                    <div className="mb-16 bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
+                            <div className="md:col-span-1 bg-gradient-to-br from-purple-500 to-purple-700 h-80 md:h-auto"></div>
+                            <div className="md:col-span-2 p-8">
+                                <span className="inline-block bg-purple-100 text-purple-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">Artikel Unggulan</span>
+                                <h2 className="text-3xl font-bold text-purple-900 mb-4">Sejarah Turunnya Al-Qur'an: Dari Gua Hira hingga Generasi Muslim Kini</h2>
+                                <p className="text-gray-700 mb-4 leading-relaxed">
+                                    Al-Qur'an adalah kitab suci umat Islam yang menjadi pedoman hidup dalam berbagai aspek kehidupan. Proses turunnya Al-Qur'an dimulai dari Gua Hira melalui malaikat Jibril kepada Nabi Muhammad SAW. Perjalanan sejarah ini mencerminkan kebijaksanaan Allah dalam menyampaikan petunjuk kepada umatnya.
+                                </p>
+                                <p className="text-gray-600 mb-6 text-sm">
+                                    <span className="font-semibold">12 Desember 2025</span> • 8 menit baca
+                                </p>
+                                <a href="#article1" className="bg-purple-700 text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-800 transition inline-block">
+                                    Baca Selengkapnya →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* <!-- Articles Grid --> */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                        <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                            <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-48"></div>
+                            <div className="p-6">
+                                <span className="text-sm text-purple-700 font-semibold">12 Desember 2025</span>
+                                <h3 className="text-xl font-bold text-purple-900 mb-3 mt-2">Metode Menghafal Al-Qur'an yang Efektif untuk Santri Pemula</h3>
+                                <p className="text-gray-700 mb-4 line-clamp-3">
+                                    Menghafal Al-Qur'an adalah salah satu amalan paling mulia dalam Islam. Dalam artikel ini, kami akan membahas berbagai metode efektif yang terbukti membantu santri pemula dalam perjalanan tahfidz mereka.
+                                </p>
+                                <div className="text-sm text-gray-600 mb-4">5 menit baca</div>
+                                <a href="#article2" className="text-purple-700 font-semibold hover:text-purple-900">Baca Selengkapnya →</a>
+                            </div>
+                        </article>
+
+                        <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                            <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-48"></div>
+                            <div className="p-6">
+                                <span className="text-sm text-purple-700 font-semibold">12 Desember 2025</span>
+                                <h3 className="text-xl font-bold text-purple-900 mb-3 mt-2">Mengapa Surat Yasin Disebut Qalb Qur'an? Ini Penjelasannya</h3>
+                                <p className="text-gray-700 mb-4 line-clamp-3">
+                                    Surat Yasin memiliki kedudukan istimewa dalam Al-Qur'an. Keistimewaan ini tercermin dari julukan "Qalb Qur'an" atau hati dari Al-Qur'an yang sering disandangnya.
+                                </p>
+                                <div className="text-sm text-gray-600 mb-4">6 menit baca</div>
+                                <a href="#article3" className="text-purple-700 font-semibold hover:text-purple-900">Baca Selengkapnya →</a>
+                            </div>
+                        </article>
+
+                        <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                            <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-48"></div>
+                            <div className="p-6">
+                                <span className="text-sm text-purple-700 font-semibold">11 Desember 2025</span>
+                                <h3 className="text-xl font-bold text-purple-900 mb-3 mt-2">Etika Bertanya Dalam Pembelajaran Al-Qur'an</h3>
+                                <p className="text-gray-700 mb-4 line-clamp-3">
+                                    Bertanya adalah metode pembelajaran yang sangat dianjurkan dalam Islam. Artikel ini membahas etika dan cara yang tepat dalam bertanya selama pembelajaran Al-Qur'an.
+                                </p>
+                                <div className="text-sm text-gray-600 mb-4">4 menit baca</div>
+                                <a href="#article4" className="text-purple-700 font-semibold hover:text-purple-900">Baca Selengkapnya →</a>
+                            </div>
+                        </article>
+
+                        <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                            <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-48"></div>
+                            <div className="p-6">
+                                <span className="text-sm text-purple-700 font-semibold">10 Desember 2025</span>
+                                <h3 className="text-xl font-bold text-purple-900 mb-3 mt-2">Fadail Al-Qur'an: Keutamaan Mempelajari Kitab Suci</h3>
+                                <p className="text-gray-700 mb-4 line-clamp-3">
+                                    Al-Qur'an adalah kalam Allah yang penuh dengan keutamaan dan keajaiban. Dalam artikel ini, kita akan mengenal berbagai fadail atau keutamaan Al-Qur'an.
+                                </p>
+                                <div className="text-sm text-gray-600 mb-4">7 menit baca</div>
+                                <a href="#article5" className="text-purple-700 font-semibold hover:text-purple-900">Baca Selengkapnya →</a>
+                            </div>
+                        </article>
+
+                        <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                            <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-48"></div>
+                            <div className="p-6">
+                                <span className="text-sm text-purple-700 font-semibold">9 Desember 2025</span>
+                                <h3 className="text-xl font-bold text-purple-900 mb-3 mt-2">Tartil: Cara Membaca Al-Qur'an dengan Indah dan Benar</h3>
+                                <p className="text-gray-700 mb-4 line-clamp-3">
+                                    Tartil adalah membaca Al-Qur'an dengan perlahan dan merenungkan setiap ayatnya. Metode ini tidak hanya meningkatkan pemahaman tetapi juga kekhusyukan dalam membaca.
+                                </p>
+                                <div className="text-sm text-gray-600 mb-4">6 menit baca</div>
+                                <a href="#article6" className="text-purple-700 font-semibold hover:text-purple-900">Baca Selengkapnya →</a>
+                            </div>
+                        </article>
+
+                        <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+                            <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-48"></div>
+                            <div className="p-6">
+                                <span className="text-sm text-purple-700 font-semibold">8 Desember 2025</span>
+                                <h3 className="text-xl font-bold text-purple-900 mb-3 mt-2">Interaksi Orang Tua dalam Mendampingi Tahfidz Anak</h3>
+                                <p className="text-gray-700 mb-4 line-clamp-3">
+                                    Peran orang tua sangat penting dalam mendukung program tahfidz anak. Artikel ini memberikan panduan praktis bagi orang tua dalam mendampingi anak tahfidz.
+                                </p>
+                                <div className="text-sm text-gray-600 mb-4">5 menit baca</div>
+                                <a href="#article7" className="text-purple-700 font-semibold hover:text-purple-900">Baca Selengkapnya →</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    {/* <!-- Pagination --> */}
+                    <div className="flex justify-center gap-2 mb-16">
+                        <button className="bg-purple-700 text-white px-4 py-2 rounded-lg hover:bg-purple-800">1</button>
+                        <button className="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300">2</button>
+                        <button className="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300">3</button>
+                        <button className="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300">→</button>
+                    </div>
+                </div>
+            </section>
+
+            {/* <!-- Subscribe Section --> */}
+            <section className="py-16 bg-gradient-to-r from-purple-600 to-purple-800">
+                <div className="max-w-6xl mx-auto px-4 text-center">
+                    <h2 className="text-4xl font-bold text-white mb-6">Dapatkan Artikel Terbaru</h2>
+                    <p className="text-purple-100 mb-8 max-w-2xl mx-auto">
+                        Berlangganan newsletter kami untuk mendapatkan artikel-artikel baru tentang Al-Qur'an dan pembelajaran Islam langsung ke email Anda.
+                    </p>
+                    <div className="flex gap-2 max-w-md mx-auto">
+                        <input 
+                            type="email" 
+                            placeholder="Masukkan email Anda" 
+                            className="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-400"
+                        />
+                        <button className="bg-white text-purple-700 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition">
+                            Berlangganan
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            {/* <!-- Footer --> */}
+            <Footer></Footer>
+        </div>
+    )
+}
+
+export default Article
