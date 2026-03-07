@@ -24,24 +24,39 @@ const Announcement = () => {
             </section>
 
             {/* <!-- Featured Announcement --> */}
-            <section className="py-12 bg-white">
-                <div className="max-w-6xl mx-auto px-4">
-                    {/* Mengganti skema warna dari red ke emerald/green */}
-                    <div className="bg-gradient-to-r from-emerald-50 to-green-50 border-l-4 border-emerald-500 rounded-xl p-8 mb-8 shadow-sm">
-                        <span className="inline-block bg-emerald-600 text-white px-4 py-1 rounded-full text-xs uppercase tracking-wider font-bold mb-4">
-                            Pengumuman Penting
-                        </span>
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                            Pendaftaran Santri Baru Dibuka untuk Tahun Ajaran 2026
-                        </h2>
-                        <p className="text-gray-600 mb-8 max-w-2xl leading-relaxed">
-                            Kami dengan senang hati mengumumkan pembukaan pendaftaran santri baru untuk tahun ajaran 2026.
-                            Pendaftaran dibuka mulai tanggal 1 Februari 2026 hingga 31 Mei 2026 atau sampai kuota penuh.
-                            Mari bergabung bersama kami dalam menghafal Al-Qur'an.
-                        </p>
-                        <button className="bg-emerald-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-emerald-700 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
-                            Daftar Sekarang
-                        </button>
+            <section className="py-24 bg-gray-50">
+                <div className="max-w-6xl mx-auto px-6">
+                    
+                    <div className="bg-white p-8 md:p-12 rounded-3xl border border-gray-100 shadow-xl shadow-green-950/5 transition-all duration-500 hover:shadow-2xl hover:shadow-green-950/10 hover:-translate-y-2">
+
+                        <div className="flex flex-col md:flex-row gap-8 items-start">
+
+                            {/* Konten Teks */}
+                            <div className="flex-1">
+                                <div className="inline-flex items-center gap-2 mb-3">
+                                    <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                                    <span className="text-green-600 font-bold text-xs tracking-widest uppercase">
+                                        Pengumuman Penting
+                                    </span>
+                                </div>
+
+                                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-950 mb-6 leading-tight">
+                                    Pendaftaran Santri Baru Dibuka untuk Tahun Ajaran 2026
+                                </h2>
+
+                                <p className="text-gray-600 text-lg leading-relaxed mb-8">
+                                    Kami dengan senang hati mengumumkan pembukaan pendaftaran santri baru untuk tahun ajaran 2026.
+                                    Pendaftaran dibuka mulai 1 Februari hingga 31 Mei 2026. Mari bergabung bersama kami dalam
+                                    perjalanan menghafal dan memahami Al-Qur'an dengan metode yang mudah dan benar.
+                                </p>
+
+                                <div className="flex flex-wrap gap-4">
+                                    <button className="bg-green-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-green-700 transition-all shadow-lg shadow-green-600/20 active:scale-95">
+                                        Daftar Sekarang
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -49,7 +64,7 @@ const Announcement = () => {
             {/* <!-- Announcements List --> */}
             <section className="py-20 bg-gray-50">
                 <div className="max-w-6xl mx-auto px-4">
-                    <h2 className="text-3xl font-bold text-purple-900 mb-12">Pengumuman Terbaru</h2>
+                    <h2 className="text-4xl font-bold text-black text-center mb-12">Pengumuman Terbaru</h2>
 
                     {/* <!-- Announcement 1 --> */}
                     <article className="bg-white rounded-lg shadow-md p-8 mb-6 border-l-4 border-purple-700 hover:shadow-lg transition">
