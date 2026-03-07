@@ -275,36 +275,6 @@ const Announcement = () => {
                 </div>
             </section>
 
-            {/* <!-- Newsletter Section --> */}
-            <section className="py-20 bg-white">
-                <div className="max-w-4xl mx-auto px-6 text-center">
-                    {/* Judul dan Deskripsi */}
-                    <div className="mb-10">
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-gray-950 mb-4">
-                            Dapatkan Update Pengumuman
-                        </h2>
-                        <p className="text-gray-600 text-lg max-w-xl mx-auto leading-relaxed">
-                            Langgani newsletter kami untuk mendapatkan pemberitahuan langsung tentang pengumuman terbaru dan kegiatan spesial dari Rumah Qur'an.
-                        </p>
-                    </div>
-
-                    {/* Input Field dengan Style Modern */}
-                    <div className="flex flex-col sm:flex-row gap-2 max-w-lg mx-auto bg-white p-2 rounded-2xl shadow-sm border border-emerald-100 transition-all hover:shadow-md">
-                        <input
-                            type="email"
-                            placeholder="Masukkan email Anda"
-                            className="flex-1 px-6 py-4 rounded-xl focus:outline-none text-gray-800 placeholder:text-gray-400 bg-transparent"
-                        />
-                        <button className="bg-emerald-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-emerald-700 transition-all shadow-lg shadow-emerald-600/20 active:scale-95">
-                            Berlangganan
-                        </button>
-                    </div>
-
-                    <p className="mt-6 text-sm text-gray-400">
-                        Kami menjaga privasi Anda dan tidak akan mengirim spam.
-                    </p>
-                </div>
-            </section>
 
             {/* <!-- Footer --> */}
             <Footer></Footer>
