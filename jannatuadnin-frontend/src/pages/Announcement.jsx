@@ -26,13 +26,20 @@ const Announcement = () => {
             {/* <!-- Featured Announcement --> */}
             <section className="py-12 bg-white">
                 <div className="max-w-6xl mx-auto px-4">
-                    <div className="bg-gradient-to-r from-red-50 to-red-100 border-l-4 border-red-500 rounded-lg p-8 mb-8">
-                        <span className="inline-block bg-red-500 text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">Pengumuman Penting</span>
-                        <h2 className="text-2xl font-bold text-gray-800 mb-4">Pendaftaran Santri Baru Dibuka untuk Tahun Ajaran 2026</h2>
-                        <p className="text-gray-700 mb-6">
-                            Kami dengan senang hati mengumumkan pembukaan pendaftaran santri baru untuk tahun ajaran 2026. Pendaftaran dibuka mulai tanggal 1 Februari 2026 hingga 31 Mei 2026 atau sampai kuota penuh. Bergabunglah dengan ratusan santri kami dalam menghafal Al-Qur'an.
+                    {/* Mengganti skema warna dari red ke emerald/green */}
+                    <div className="bg-gradient-to-r from-emerald-50 to-green-50 border-l-4 border-emerald-500 rounded-xl p-8 mb-8 shadow-sm">
+                        <span className="inline-block bg-emerald-600 text-white px-4 py-1 rounded-full text-xs uppercase tracking-wider font-bold mb-4">
+                            Pengumuman Penting
+                        </span>
+                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                            Pendaftaran Santri Baru Dibuka untuk Tahun Ajaran 2026
+                        </h2>
+                        <p className="text-gray-600 mb-8 max-w-2xl leading-relaxed">
+                            Kami dengan senang hati mengumumkan pembukaan pendaftaran santri baru untuk tahun ajaran 2026.
+                            Pendaftaran dibuka mulai tanggal 1 Februari 2026 hingga 31 Mei 2026 atau sampai kuota penuh.
+                            Mari bergabung bersama kami dalam menghafal Al-Qur'an.
                         </p>
-                        <button className="bg-red-500 text-white px-6 py-2 rounded-lg font-semibold hover:bg-red-600 transition">
+                        <button className="bg-emerald-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-emerald-700 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                             Daftar Sekarang
                         </button>
                     </div>
