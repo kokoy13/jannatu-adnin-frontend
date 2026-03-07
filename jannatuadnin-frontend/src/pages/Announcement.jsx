@@ -1,18 +1,24 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 
-const Announcement = () =>{
-    return(
+const Announcement = () => {
+    return (
         <div className="bg-white text-gray-800">
             {/* <!-- Navigation --> */}
             <Navbar></Navbar>
 
             {/* <!-- Hero Section --> */}
-            <section className="pt-24 pb-16 bg-gradient-to-b from-purple-50 to-white islamic-pattern">
-                <div className="max-w-6xl mx-auto px-4 text-center">
-                    <h1 className="text-5xl font-bold text-purple-900 mb-6">Pengumuman & Berita</h1>
-                    <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                        Informasi terkini tentang kegiatan dan perkembangan Rumah Qur'an Zawiyah Sakinah
+            <section className="pt-40 pb-16 bg-white relative overflow-hidden">
+                {/* Dekorasi tipis agar tidak terlalu polos */}
+                <div className="absolute top-0 right-0 w-64 h-64 bg-green-100 rounded-full blur-3xl opacity-50 -mr-20 -mt-20"></div>
+
+                <div className="max-w-6xl mx-auto px-4 text-center relative z-10">
+                    <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+                        Pengumuman & Berita
+                    </h1>
+                    <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                        Temukan informasi terkini, kegiatan santri, dan perkembangan terbaru dari
+                        <span className="font-semibold text-gray-800"> Rumah Qur'an Jannatu Adnin</span>.
                     </p>
                 </div>
             </section>
@@ -153,9 +159,9 @@ const Announcement = () =>{
                         Langgani newsletter kami untuk mendapatkan pemberitahuan langsung tentang pengumuman terbaru dan kegiatan spesial dari Rumah Qur'an.
                     </p>
                     <div className="flex gap-2 max-w-md mx-auto">
-                        <input 
-                            type="email" 
-                            placeholder="Masukkan email Anda" 
+                        <input
+                            type="email"
+                            placeholder="Masukkan email Anda"
                             className="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-400"
                         />
                         <button className="bg-purple-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-800 transition">
