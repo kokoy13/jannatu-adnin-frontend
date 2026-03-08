@@ -105,87 +105,109 @@ const About = () => {
             </section>
 
             {/* <!-- Values Section --> */}
-            <section className="py-20 bg-white">
-                <div className="max-w-6xl mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-center text-purple-900 mb-12">Nilai-Nilai Kami</h2>
+            <section className="py-24 bg-white">
+                <div className="max-w-6xl mx-auto px-6">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-950 text-center mb-16">
+                        Nilai-Nilai <span className="text-emerald-600">Kami</span>
+                    </h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-lg border-2 border-purple-200">
-                            <div className="text-4xl mb-4">📖</div>
-                            <h3 className="text-2xl font-bold text-purple-900 mb-4">Tauhid</h3>
-                            <p className="text-gray-700">Memperkuat keyakinan kepada Allah dan memahami keesaan Tuhan melalui Al-Qur'an.</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                        {/* Tauhid */}
+                        <div className="group p-8 rounded-3xl bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2 hover:border-emerald-100">
+                            <div className="text-4xl mb-6">📖</div>
+                            <h3 className="text-xl font-bold text-gray-950 mb-3">Tauhid</h3>
+                            <p className="text-gray-600 leading-relaxed text-sm">Memperkuat keyakinan kepada Allah dan memahami keesaan Tuhan melalui Al-Qur'an.</p>
                         </div>
 
-                        <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-lg border-2 border-purple-200">
-                            <div className="text-4xl mb-4">🤝</div>
-                            <h3 className="text-2xl font-bold text-purple-900 mb-4">Kekeluargaan</h3>
-                            <p className="text-gray-700">Membangun hubungan yang erat dan saling mendukung antar santri, pengurus, dan komunitas.</p>
+                        {/* Kekeluargaan */}
+                        <div className="group p-8 rounded-3xl bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2 hover:border-emerald-100">
+                            <div className="text-4xl mb-6">🤝</div>
+                            <h3 className="text-xl font-bold text-gray-950 mb-3">Kekeluargaan</h3>
+                            <p className="text-gray-600 leading-relaxed text-sm">Membangun hubungan yang erat dan saling mendukung antar santri, pengurus, dan komunitas.</p>
                         </div>
 
-                        <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-lg border-2 border-purple-200">
-                            <div className="text-4xl mb-4">✨</div>
-                            <h3 className="text-2xl font-bold text-purple-900 mb-4">Integritas</h3>
-                            <p className="text-gray-700">Berkomitmen pada kejujuran, keterbukaan, dan konsistensi dalam setiap tindakan.</p>
+                        {/* Integritas */}
+                        <div className="group p-8 rounded-3xl bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2 hover:border-emerald-100">
+                            <div className="text-4xl mb-6">✨</div>
+                            <h3 className="text-xl font-bold text-gray-950 mb-3">Integritas</h3>
+                            <p className="text-gray-600 leading-relaxed text-sm">Berkomitmen pada kejujuran, keterbukaan, dan konsistensi dalam setiap tindakan.</p>
                         </div>
 
-                        <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-lg border-2 border-purple-200">
-                            <div className="text-4xl mb-4">🌱</div>
-                            <h3 className="text-2xl font-bold text-purple-900 mb-4">Pertumbuhan</h3>
-                            <p className="text-gray-700">Mendorong pengembangan diri santri secara berkelanjutan dan melampaui ekspektasi.</p>
+                        {/* Pertumbuhan */}
+                        <div className="group p-8 rounded-3xl bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2 hover:border-emerald-100">
+                            <div className="text-4xl mb-6">🌱</div>
+                            <h3 className="text-xl font-bold text-gray-950 mb-3">Pertumbuhan</h3>
+                            <p className="text-gray-600 leading-relaxed text-sm">Mendorong pengembangan diri santri secara berkelanjutan dan melampaui ekspektasi.</p>
                         </div>
 
-                        <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-lg border-2 border-purple-200">
-                            <div className="text-4xl mb-4">🎯</div>
-                            <h3 className="text-2xl font-bold text-purple-900 mb-4">Keunggulan</h3>
-                            <p className="text-gray-700">Berusaha memberikan yang terbaik dalam setiap aspek pembelajaran dan pengajaran.</p>
+                        {/* Keunggulan */}
+                        <div className="group p-8 rounded-3xl bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2 hover:border-emerald-100">
+                            <div className="text-4xl mb-6">🎯</div>
+                            <h3 className="text-xl font-bold text-gray-950 mb-3">Keunggulan</h3>
+                            <p className="text-gray-600 leading-relaxed text-sm">Berusaha memberikan yang terbaik dalam setiap aspek pembelajaran dan pengajaran.</p>
                         </div>
 
-                        <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-lg border-2 border-purple-200">
-                            <div className="text-4xl mb-4">🤲</div>
-                            <h3 className="text-2xl font-bold text-purple-900 mb-4">Keberkahan</h3>
-                            <p className="text-gray-700">Mengedepankan niat tulus untuk mendapatkan berkah dari setiap usaha dan kerja keras.</p>
+                        {/* Keberkahan */}
+                        <div className="group p-8 rounded-3xl bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2 hover:border-emerald-100">
+                            <div className="text-4xl mb-6">🤲</div>
+                            <h3 className="text-xl font-bold text-gray-950 mb-3">Keberkahan</h3>
+                            <p className="text-gray-600 leading-relaxed text-sm">Mengedepankan niat tulus untuk mendapatkan berkah dari setiap usaha dan kerja keras.</p>
                         </div>
+
                     </div>
                 </div>
             </section>
 
             {/* <!-- Team Section --> */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-6xl mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-center text-purple-900 mb-12">Tim Pengurus</h2>
+            <section className="py-24 bg-gray-50">
+                <div className="max-w-6xl mx-auto px-6">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-950 text-center mb-16">
+                        Tim <span className="text-emerald-600">Pengurus</span>
+                    </h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-                            <div className="bg-gradient-to-br from-purple-400 to-purple-600 w-24 h-24 mx-auto rounded-full mb-4"></div>
-                            <h3 className="text-xl font-bold text-purple-900 mb-2">Ketua</h3>
-                            <p className="text-gray-700 mb-2">KH. Ahmad Hanafi</p>
-                            <p className="text-sm text-gray-600">Pengasuh Rumah Qur'an</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                        {/* Contoh 1: Ketua */}
+                        <div className="bg-white p-8 rounded-3xl border border-gray-100 text-center flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2 hover:border-emerald-100">
+                            <div className="w-24 h-24 mx-auto bg-emerald-100 rounded-full mb-6 flex items-center justify-center text-emerald-600 font-bold text-2xl">KH</div>
+                            <h3 className="text-lg font-bold text-gray-950 mb-1">Ketua</h3>
+                            <p className="text-emerald-600 font-medium mb-3">KH. Ahmad Hanafi</p>
+
+                            {/* mt-auto akan mendorong elemen ini ke bawah */}
+                            <p className="mt-auto text-sm text-gray-500 italic">Pengasuh Rumah Qur'an</p>
                         </div>
 
-                        <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-                            <div className="bg-gradient-to-br from-purple-400 to-purple-600 w-24 h-24 mx-auto rounded-full mb-4"></div>
-                            <h3 className="text-xl font-bold text-purple-900 mb-2">Wakil Ketua</h3>
-                            <p className="text-gray-700 mb-2">Ustadz Mukhtar Bahri</p>
-                            <p className="text-sm text-gray-600">Koordinator Program</p>
+                        {/* Contoh 2: Wakil Ketua */}
+                        <div className="bg-white p-8 rounded-3xl border border-gray-100 text-center flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2 hover:border-emerald-100">
+                            <div className="w-24 h-24 mx-auto bg-emerald-100 rounded-full mb-6 flex items-center justify-center text-emerald-600 font-bold text-2xl">UM</div>
+                            <h3 className="text-lg font-bold text-gray-950 mb-1">Wakil Ketua</h3>
+                            <p className="text-emerald-600 font-medium mb-3">Ustadz Mukhtar Bahri</p>
+
+                            <p className="mt-auto text-sm text-gray-500 italic">Koordinator Program</p>
                         </div>
 
-                        <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-                            <div className="bg-gradient-to-br from-purple-400 to-purple-600 w-24 h-24 mx-auto rounded-full mb-4"></div>
-                            <h3 className="text-xl font-bold text-purple-900 mb-2">Sekretaris</h3>
-                            <p className="text-gray-700 mb-2">Ustadzah Siti Nurhaliza</p>
-                            <p className="text-sm text-gray-600">Administrasi & Dokumen</p>
+                        {/* Contoh 3: Sekretaris */}
+                        <div className="bg-white p-8 rounded-3xl border border-gray-100 text-center flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2 hover:border-emerald-100">
+                            <div className="w-24 h-24 mx-auto bg-emerald-100 rounded-full mb-6 flex items-center justify-center text-emerald-600 font-bold text-2xl">SN</div>
+                            <h3 className="text-lg font-bold text-gray-950 mb-1">Sekretaris</h3>
+                            <p className="text-emerald-600 font-medium mb-3">Ustadzah Siti Nurhaliza</p>
+
+                            <p className="mt-auto text-sm text-gray-500 italic">Administrasi & Dokumen</p>
                         </div>
 
-                        <div className="bg-white rounded-lg shadow-md p-6 text-center hover:shadow-lg transition">
-                            <div className="bg-gradient-to-br from-purple-400 to-purple-600 w-24 h-24 mx-auto rounded-full mb-4"></div>
-                            <h3 className="text-xl font-bold text-purple-900 mb-2">Bendahara</h3>
-                            <p className="text-gray-700 mb-2">Ustadz Bambang Sutrisno</p>
-                            <p className="text-sm text-gray-600">Pengelola Keuangan</p>
+                        {/* Contoh 4: Bendahara */}
+                        <div className="bg-white p-8 rounded-3xl border border-gray-100 text-center flex flex-col h-full transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2 hover:border-emerald-100">
+                            <div className="w-24 h-24 mx-auto bg-emerald-100 rounded-full mb-6 flex items-center justify-center text-emerald-600 font-bold text-2xl">UB</div>
+                            <h3 className="text-lg font-bold text-gray-950 mb-1">Bendahara</h3>
+                            <p className="text-emerald-600 font-medium mb-3">Ustadz Bambang Sutrisno</p>
+
+                            <p className="mt-auto text-sm text-gray-500 italic">Pengelola Keuangan</p>
                         </div>
+
                     </div>
                 </div>
             </section>
-
             {/* <!-- Footer --> */}
             <Footer></Footer>
         </div>
