@@ -80,20 +80,27 @@ const About = () => {
             </section>
 
             {/* <!-- History Section --> */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-6xl mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-center text-purple-900 mb-12">Sejarah Kami</h2>
-                    <div className="max-w-3xl mx-auto">
-                        <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                            Rumah Qur'an - Zawiyah Sakinah didirikan dengan visi untuk membangun pusat pembelajaran Al-Qur'an yang modern namun tetap memegang teguh nilai-nilai tradisional Islam. Perjalanan kami dimulai dari mimpi sederhana untuk memberikan akses pendidikan Al-Qur'an yang berkualitas kepada masyarakat luas.
+            <section className="py-24 bg-gray-50">
+                <div className="max-w-4xl mx-auto px-6">
+
+                    <h2 className="text-4xl font-extrabold text-gray-950 text-center mb-16">
+                        Sejarah <span className="text-emerald-600">Kami</span>
+                    </h2>
+
+                    <div className="space-y-8">
+                        <p className="text-lg text-gray-600 leading-relaxed">
+                            Rumah Qur'an Jannatu Adnin didirikan dengan visi untuk membangun pusat pembelajaran Al-Qur'an yang modern namun tetap memegang teguh nilai-nilai tradisional Islam. Perjalanan kami dimulai dari mimpi sederhana untuk memberikan akses pendidikan Al-Qur'an yang berkualitas kepada masyarakat luas.
                         </p>
-                        <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+
+                        <p className="text-lg text-gray-600 leading-relaxed">
                             Sejak didirikan, kami telah berkembang menjadi lembaga pendidikan Islam yang dipercaya oleh ribuan santri dan keluarganya. Komitmen kami adalah terus berinovasi dalam metode pembelajaran sambil mempertahankan keaslian ajaran Al-Qur'an dan Hadits.
                         </p>
-                        <p className="text-lg text-gray-700 leading-relaxed">
+
+                        <p className="text-lg text-gray-600 leading-relaxed">
                             Hingga saat ini, kami terus memperluas jaringan dan kemitraan dengan institusi pendidikan Islam lainnya untuk memperkuat gerakan pendidikan Al-Qur'an di nusantara.
                         </p>
                     </div>
+
                 </div>
             </section>
 
