@@ -13,7 +13,7 @@ const Announcement = () => {
 
                 <div className="max-w-6xl mx-auto px-4 text-center relative z-10">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
-                        Pengumuman & Berita
+                        Pengumuman &<span className="text-emerald-600">Berita</span>
                     </h1>
                     <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
                         Temukan informasi terkini, kegiatan santri, dan perkembangan terbaru dari
@@ -63,7 +63,7 @@ const Announcement = () => {
             {/* <!-- Announcements List --> */}
             <section className="py-20 bg-gray-50">
                 <div className="max-w-6xl mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-black text-center mb-12">Pengumuman Terbaru</h2>
+                    <h2 className="text-4xl font-bold text-black text-center mb-12">Pengumuman <span className="text-emerald-600">Terbaru</span></h2>
 
                     {/* <!-- Announcement 1 --> */}
                     <article className="group bg-white rounded-3xl border border-gray-100 p-8 mb-8 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-1">

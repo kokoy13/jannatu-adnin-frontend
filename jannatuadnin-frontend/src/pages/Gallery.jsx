@@ -14,7 +14,7 @@ const Gallery = () => {
 
                 <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-gray-950 mb-6 leading-tight">
-                        Galeri Kegiatan
+                        Galeri <span className="text-emerald-600">Kegiatan</span>
                     </h1>
 
                     <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
@@ -249,11 +249,10 @@ const Gallery = () => {
             </section>
 
             {/* <!-- Video Section --> */}
-            {/* */}
             <section className="py-24 bg-white">
                 <div className="max-w-6xl mx-auto px-6">
                     <h2 className="text-3xl md:text-4xl font-extrabold text-gray-950 text-center mb-16">
-                        Video Dokumentasi
+                        Video <span className="text-emerald-600">Dokumentasi</span>
                     </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -305,27 +304,34 @@ const Gallery = () => {
             </section>
 
             {/* <!-- Instagram Section --> */}
-            <section className="py-20 bg-gray-50">
-                <div className="max-w-6xl mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-center text-purple-900 mb-12">Follow Media Sosial Kami</h2>
+            <section className="py-24 bg-gray-50">
+                <div className="max-w-6xl mx-auto px-6">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-950 text-center mb-16">
+                        Ikuti Kami di <span className="text-emerald-600">Media Sosial</span>
+                    </h2>
 
-                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg p-8 text-center text-white mb-8">
-                        <h3 className="text-2xl font-bold mb-2">@zawiyahsakinahkebumen</h3>
-                        <p className="mb-6">Ikuti kami di Instagram untuk update kegiatan terbaru dan konten eksklusif</p>
-                        <button className="bg-white text-purple-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-                            Kunjungi Instagram
+                    {/* Banner Utama */}
+                    <div className="bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-3xl p-12 text-center text-white mb-12 shadow-xl shadow-emerald-900/20">
+                        <h3 className="text-3xl font-bold mb-4">@zawiyahsakinahkebumen</h3>
+                        <p className="mb-8 text-emerald-50 max-w-lg mx-auto leading-relaxed">
+                            Ikuti kami di Instagram untuk mendapatkan update kegiatan terbaru, tips menghafal, dan konten eksklusif lainnya.
+                        </p>
+                        <button className="bg-white text-emerald-700 px-8 py-4 rounded-2xl font-bold hover:bg-emerald-50 transition-all shadow-lg hover:-translate-y-1 active:scale-95">
+                            Kunjungi Instagram →
                         </button>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                        <div className="bg-gradient-to-br from-pink-400 to-purple-400 rounded-lg h-48"></div>
-                        <div className="bg-gradient-to-br from-purple-400 to-pink-400 rounded-lg h-48"></div>
-                        <div className="bg-gradient-to-br from-pink-300 to-purple-500 rounded-lg h-48"></div>
-                        <div className="bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg h-48"></div>
+                    {/* Grid Gambar Sosial Media */}
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        {[...Array(4)].map((_, i) => (
+                            <div key={i} className="group relative rounded-3xl h-60 bg-gradient-to-tr from-emerald-200 to-emerald-400 overflow-hidden cursor-pointer">
+                                {/* Overlay Tipis saat Hover */}
+                                <div className="absolute inset-0 bg-emerald-950/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
-
             {/* <!-- Footer --> */}
             <Footer></Footer>
         </div>
