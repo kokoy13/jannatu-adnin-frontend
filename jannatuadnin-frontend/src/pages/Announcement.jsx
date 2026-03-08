@@ -9,7 +9,6 @@ const Announcement = () => {
 
             {/* <!-- Hero Section --> */}
             <section className="pt-35  bg-white relative overflow-hidden">
-                {/* Dekorasi tipis agar tidak terlalu polos */}
                 <div className="absolute top-0 right-0 w-64 h-64 rounded-full blur-3xl opacity-50 -mr-20 -mt-20"></div>
 
                 <div className="max-w-6xl mx-auto px-4 text-center relative z-10">

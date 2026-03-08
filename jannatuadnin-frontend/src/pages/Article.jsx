@@ -1,42 +1,67 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 
-const Article = () =>{
-    return(
+const Article = () => {
+    return (
         <div className="bg-white text-gray-800">
             {/* <!-- Navigation --> */}
             <Navbar></Navbar>
 
             {/* <!-- Hero Section --> */}
-            <section className="pt-24 pb-16 bg-gradient-to-b from-purple-50 to-white islamic-pattern">
-                <div className="max-w-6xl mx-auto px-4 text-center">
-                    <h1 className="text-5xl font-bold text-purple-900 mb-6">Artikel & Wawasan</h1>
-                    <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                        Membaca dan memahami Al-Qur'an melalui artikel-artikel mendalam dan penuh manfaat
+            <section className="pt-35 pb-20 bg-white relative overflow-hidden">
+                {/* Elemen Dekoratif Background */}
+                <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-100 rounded-full blur-3xl opacity-40 -mr-20 -mt-20"></div>
+
+                <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+                    <h1 className="text-4xl md:text-5xl font-extrabold text-gray-950 mb-6 leading-tight">
+                        Artikel & Wawasan
+                    </h1>
+
+                    <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                        Membaca dan memahami Al-Qur'an melalui artikel-artikel mendalam dan penuh manfaat untuk memperkaya khazanah keilmuan santri dan masyarakat.
                     </p>
                 </div>
             </section>
 
             {/* <!-- Articles Grid --> */}
-            <section className="py-20 bg-white">
+            <section className="py-15 bg-white">
                 <div className="max-w-6xl mx-auto px-4">
                     {/* <!-- Featured Article --> */}
-                    <div className="mb-16 bg-white rounded-lg shadow-lg overflow-hidden">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
-                            <div className="md:col-span-1 bg-gradient-to-br from-purple-500 to-purple-700 h-80 md:h-auto"></div>
-                            <div className="md:col-span-2 p-8">
-                                <span className="inline-block bg-purple-100 text-purple-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">Artikel Unggulan</span>
-                                <h2 className="text-3xl font-bold text-purple-900 mb-4">Sejarah Turunnya Al-Qur'an: Dari Gua Hira hingga Generasi Muslim Kini</h2>
-                                <p className="text-gray-700 mb-4 leading-relaxed">
-                                    Al-Qur'an adalah kitab suci umat Islam yang menjadi pedoman hidup dalam berbagai aspek kehidupan. Proses turunnya Al-Qur'an dimulai dari Gua Hira melalui malaikat Jibril kepada Nabi Muhammad SAW. Perjalanan sejarah ini mencerminkan kebijaksanaan Allah dalam menyampaikan petunjuk kepada umatnya.
-                                </p>
-                                <p className="text-gray-600 mb-6 text-sm">
-                                    <span className="font-semibold">12 Desember 2025</span> • 8 menit baca
-                                </p>
-                                <a href="#article1" className="bg-purple-700 text-white px-6 py-2 rounded-lg font-semibold hover:bg-purple-800 transition inline-block">
-                                    Baca Selengkapnya →
-                                </a>
+                    <div className="mb-16 bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2">
+                        <div className="grid grid-cols-1 md:grid-cols-3">
+
+                            {/* Kolom Gambar/Aksen */}
+                            <div className="md:col-span-1 bg-gradient-to-br from-emerald-200 to-emerald-500 h-64 md:h-auto flex items-center justify-center">
+                                <span className="text-white font-bold tracking-widest opacity-50 uppercase text-sm">Hero Image</span>
                             </div>
+
+                            {/* Kolom Konten */}
+                            <div className="md:col-span-2 p-8 md:p-12">
+                                <span className="inline-block bg-emerald-50 text-emerald-600 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+                                    Artikel Unggulan
+                                </span>
+
+                                <h2 className="text-3xl md:text-4xl font-extrabold text-gray-950 mb-6 leading-tight">
+                                    Sejarah Turunnya Al-Qur'an: Dari Gua Hira hingga Generasi Muslim Kini
+                                </h2>
+
+                                <p className="text-gray-600 mb-8 leading-relaxed text-lg">
+                                    Al-Qur'an adalah kitab suci umat Islam yang menjadi pedoman hidup dalam berbagai aspek kehidupan.
+                                    Perjalanan sejarah ini mencerminkan kebijaksanaan Allah dalam menyampaikan petunjuk kepada umatnya,
+                                    dimulai dari wahyu pertama di Gua Hira hingga terjaga hingga saat ini.
+                                </p>
+
+                                <div className="flex items-center justify-between mt-8 border-t border-gray-100 pt-8">
+                                    <p className="text-gray-500 text-sm font-medium">
+                                        <span className="text-gray-900 font-semibold">12 Desember 2025</span> • 8 menit baca
+                                    </p>
+
+                                    <a href="#article1" className="bg-emerald-600 text-white px-8 py-3 rounded-2xl font-semibold hover:bg-emerald-700 transition-all shadow-lg shadow-emerald-600/20 active:scale-95">
+                                        Baca Selengkapnya →
+                                    </a>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -139,9 +164,9 @@ const Article = () =>{
                         Berlangganan newsletter kami untuk mendapatkan artikel-artikel baru tentang Al-Qur'an dan pembelajaran Islam langsung ke email Anda.
                     </p>
                     <div className="flex gap-2 max-w-md mx-auto">
-                        <input 
-                            type="email" 
-                            placeholder="Masukkan email Anda" 
+                        <input
+                            type="email"
+                            placeholder="Masukkan email Anda"
                             className="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-400"
                         />
                         <button className="bg-white text-purple-700 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition">
