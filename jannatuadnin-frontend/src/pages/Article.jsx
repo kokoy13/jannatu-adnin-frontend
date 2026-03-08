@@ -281,26 +281,6 @@ const Article = () => {
                 </div>
             </section>
 
-            {/* <!-- Subscribe Section --> */}
-            <section className="py-16 bg-gradient-to-r from-purple-600 to-purple-800">
-                <div className="max-w-6xl mx-auto px-4 text-center">
-                    <h2 className="text-4xl font-bold text-white mb-6">Dapatkan Artikel Terbaru</h2>
-                    <p className="text-purple-100 mb-8 max-w-2xl mx-auto">
-                        Berlangganan newsletter kami untuk mendapatkan artikel-artikel baru tentang Al-Qur'an dan pembelajaran Islam langsung ke email Anda.
-                    </p>
-                    <div className="flex gap-2 max-w-md mx-auto">
-                        <input
-                            type="email"
-                            placeholder="Masukkan email Anda"
-                            className="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-400"
-                        />
-                        <button className="bg-white text-purple-700 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition">
-                            Berlangganan
-                        </button>
-                    </div>
-                </div>
-            </section>
-
             {/* <!-- Footer --> */}
             <Footer></Footer>
         </div>
