@@ -1,5 +1,7 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import visi from "../assets/img/visi.jpg"
+import misi from "../assets/img/misi.jpg"
 
 const About = () => {
     return (
@@ -38,12 +40,16 @@ const About = () => {
                                 Kami percaya bahwa pendidikan Al-Qur'an adalah fondasi utama dalam membangun generasi yang saleh, berakhlak mulia, dan bermanfaat bagi umat.
                             </p>
                         </div>
-                        <div className="h-80 bg-gradient-to-tr from-emerald-200 to-emerald-600 rounded-3xl shadow-lg shadow-emerald-600/20"></div>
+                        <div className="h-80 bg-gradient-to-tr from-emerald-200 to-emerald-600 rounded-3xl shadow-lg shadow-emerald-600/20 overflow-hidden">
+                            <img src={visi} alt="visi kami" className="w-full h-full object-cover" />
+                        </div>
                     </div>
 
                     {/* Misi Kami */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                        <div className="h-80 bg-gradient-to-tr from-emerald-200 to-emerald-600 rounded-3xl shadow-lg shadow-emerald-600/20 order-2 md:order-1"></div>
+                        <div className="h-80 bg-gradient-to-tr from-emerald-200 to-emerald-600 rounded-3xl shadow-lg shadow-emerald-600/20 order-2 md:order-1 overflow-hidden">
+                            <img src={misi} alt="misi kami" className="w-full h-full object-cover" />
+                        </div>
                         <div className="space-y-8 order-1 md:order-2">
                             <h2 className="text-4xl font-extrabold text-gray-950">Misi Kami</h2>
                             <ul className="space-y-6 text-lg text-gray-700">
