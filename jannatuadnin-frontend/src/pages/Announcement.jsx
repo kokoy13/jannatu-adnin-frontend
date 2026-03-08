@@ -1,5 +1,10 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import img1 from "../assets/img/img1.jpg"
+import img2 from "../assets/img/img2.jpg"
+import img3 from "../assets/img/img3.jpg"
+import img4 from "../assets/img/img4.jpg"
+import img5 from "../assets/img/img5.jpg"
 
 const Announcement = () => {
     return (
@@ -100,10 +105,12 @@ const Announcement = () => {
 
                             {/* Image Placeholder (Profesional & Aesthetic) */}
                             <div className="md:w-72 h-64 md:h-auto bg-gradient-to-tr from-emerald-100 to-green-200 rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden">
-                                {/* Anda bisa menambahkan tag <img> di sini nantinya */}
-                                <span className="text-emerald-700/50 font-medium text-sm">Foto Kegiatan</span>
+                                <img
+                                    src={img1}
+                                    alt="Foto Kegiatan"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
-
                         </div>
                     </article>
 
@@ -141,10 +148,13 @@ const Announcement = () => {
                             </div>
 
                             {/* Image Placeholder */}
-                            <div className="md:w-72 h-64 md:h-auto bg-gradient-to-tr from-emerald-200 to-emerald-400 rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden">
-                                <span className="text-emerald-900/40 font-medium text-sm">Foto Muktamar</span>
+                            <div className="md:w-72 h-64 md:h-auto bg-gradient-to-tr from-emerald-100 to-green-200 rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden">
+                                <img
+                                    src={img2}
+                                    alt="Foto Kegiatan"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
-
                         </div>
                     </article>
 
@@ -182,8 +192,12 @@ const Announcement = () => {
                             </div>
 
                             {/* Image Placeholder */}
-                            <div className="md:w-72 h-64 md:h-auto bg-gradient-to-tr from-emerald-300 to-emerald-600 rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden">
-                                <span className="text-white/70 font-medium text-sm">Foto Silaturahmi</span>
+                            <div className="md:w-72 h-64 md:h-auto bg-gradient-to-tr from-emerald-100 to-green-200 rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden">
+                                <img
+                                    src={img3}
+                                    alt="Foto Kegiatan"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
 
                         </div>
@@ -223,15 +237,18 @@ const Announcement = () => {
                             </div>
 
                             {/* Image Placeholder */}
-                            <div className="md:w-72 h-64 md:h-auto bg-gradient-to-tr from-emerald-200 to-emerald-500 rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden">
-                                <span className="text-white/70 font-medium text-sm">Beasiswa 2025</span>
+                            <div className="md:w-72 h-64 md:h-auto bg-gradient-to-tr from-emerald-100 to-green-200 rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden">
+                                <img
+                                    src={img4}
+                                    alt="Foto Kegiatan"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
 
                         </div>
                     </article>
 
                     {/* <!-- Announcement 5 --> */}
-                    {/* */}
                     <article className="group bg-white rounded-3xl border border-gray-100 p-8 mb-8 shadow-sm transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-1">
                         <div className="flex flex-col md:flex-row gap-8">
 
@@ -265,8 +282,12 @@ const Announcement = () => {
                             </div>
 
                             {/* Image Placeholder */}
-                            <div className="md:w-72 h-64 md:h-auto bg-gradient-to-tr from-emerald-200 to-emerald-600 rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden">
-                                <span className="text-white/70 font-medium text-sm">Foto Khataman</span>
+                            <div className="md:w-72 h-64 md:h-auto bg-gradient-to-tr from-emerald-100 to-green-200 rounded-2xl flex-shrink-0 flex items-center justify-center overflow-hidden">
+                                <img
+                                    src={img5}
+                                    alt="Foto Kegiatan"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
 
                         </div>

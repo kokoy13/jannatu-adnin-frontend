@@ -1,5 +1,12 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import arti1 from "../assets/img/arti1.jpg"
+import arti2 from "../assets/img/arti2.jpg"
+import arti3 from "../assets/img/arti3.jpg"
+import arti4 from "../assets/img/arti4.jpg"
+import arti5 from "../assets/img/arti5.jpg"
+import arti6 from "../assets/img/arti6.jpg"
+import arti7 from "../assets/img/arti7.jpg"
 
 const Article = () => {
     return (
@@ -31,8 +38,12 @@ const Article = () => {
                         <div className="grid grid-cols-1 md:grid-cols-3">
 
                             {/* Kolom Gambar/Aksen */}
-                            <div className="md:col-span-1 bg-gradient-to-br from-emerald-200 to-emerald-500 h-64 md:h-auto flex items-center justify-center">
-                                <span className="text-white font-bold tracking-widest opacity-50 uppercase text-sm">Hero Image</span>
+                            <div className="md:col-span-1 h-64 md:h-auto overflow-hidden rounded-r-3xl">
+                                <img
+                                    src={arti1}
+                                    alt="Foto Kegiatan"
+                                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                                />
                             </div>
 
                             {/* Kolom Konten */}
@@ -71,7 +82,13 @@ const Article = () => {
 
                             {/* Header Gambar dengan Gradient Emerald */}
                             <div className="h-56 bg-gradient-to-tr from-emerald-200 to-emerald-500 relative overflow-hidden">
-                                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                <div className="absolute inset-0 bg-black/5  transition-opacity">
+                                    <img
+                                        src={arti2}
+                                        alt="Foto Kegiatan"
+                                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                                    />
+                                </div>
                             </div>
 
                             {/* Konten Utama */}
@@ -102,7 +119,13 @@ const Article = () => {
 
                             {/* Header Gambar dengan Gradient Emerald */}
                             <div className="h-56 bg-gradient-to-tr from-emerald-200 to-emerald-500 relative overflow-hidden">
-                                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                <div className="absolute inset-0 bg-black/5  transition-opacity">
+                                    <img
+                                        src={arti3}
+                                        alt="Foto Kegiatan"
+                                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                                    />
+                                </div>
                             </div>
 
                             {/* Konten Utama */}
@@ -133,7 +156,13 @@ const Article = () => {
 
                             {/* Header Gambar dengan Gradient Emerald */}
                             <div className="h-56 bg-gradient-to-tr from-emerald-200 to-emerald-500 relative overflow-hidden">
-                                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                <div className="absolute inset-0 bg-black/5  transition-opacity">
+                                    <img
+                                        src={arti4}
+                                        alt="Foto Kegiatan"
+                                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                                    />
+                                </div>
                             </div>
 
                             {/* Konten Utama */}
@@ -164,7 +193,13 @@ const Article = () => {
 
                             {/* Header Gambar dengan Gradient Emerald */}
                             <div className="h-56 bg-gradient-to-tr from-emerald-200 to-emerald-500 relative overflow-hidden">
-                                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                <div className="absolute inset-0 bg-black/5  transition-opacity">
+                                    <img
+                                        src={arti5}
+                                        alt="Foto Kegiatan"
+                                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                                    />
+                                </div>
                             </div>
 
                             {/* Konten Utama */}
@@ -195,7 +230,12 @@ const Article = () => {
 
                             {/* Header Gambar dengan Gradient Emerald */}
                             <div className="h-56 bg-gradient-to-tr from-emerald-200 to-emerald-500 relative overflow-hidden">
-                                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                <div className="absolute inset-0 bg-black/5  transition-opacity">
+                                    <img
+                                        src={arti6}
+                                        alt="Foto Kegiatan"
+                                        className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                                    /></div>
                             </div>
 
                             {/* Konten Utama */}
@@ -226,7 +266,13 @@ const Article = () => {
                         <article className="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-1 flex flex-col h-full">
 
                             {/* Header Gambar */}
-                            <div className="h-56 bg-gradient-to-tr from-emerald-200 to-emerald-500 relative overflow-hidden"></div>
+                            <div className="h-56 bg-gradient-to-tr from-emerald-200 to-emerald-500 relative overflow-hidden">
+                                <img
+                                    src={arti7}
+                                    alt="Foto Kegiatan"
+                                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                                />
+                            </div>
 
                             {/* Konten Utama */}
                             <div className="p-8 flex flex-col flex-grow"> {/* flex-grow memastikan container ini mengisi ruang kosong */}
@@ -265,8 +311,8 @@ const Article = () => {
                             <button
                                 key={page}
                                 className={`w-10 h-10 flex items-center justify-center rounded-xl font-bold transition-all ${page === 1
-                                        ? "bg-emerald-600 text-white shadow-lg shadow-emerald-600/20"
-                                        : "bg-gray-100 text-gray-600 hover:bg-emerald-50 hover:text-emerald-600"
+                                    ? "bg-emerald-600 text-white shadow-lg shadow-emerald-600/20"
+                                    : "bg-gray-100 text-gray-600 hover:bg-emerald-50 hover:text-emerald-600"
                                     }`}
                             >
                                 {page}
