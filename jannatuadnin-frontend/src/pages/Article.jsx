@@ -67,91 +67,216 @@ const Article = () => {
 
                     {/* <!-- Articles Grid --> */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                        <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                            <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-48"></div>
-                            <div className="p-6">
-                                <span className="text-sm text-purple-700 font-semibold">12 Desember 2025</span>
-                                <h3 className="text-xl font-bold text-purple-900 mb-3 mt-2">Metode Menghafal Al-Qur'an yang Efektif untuk Santri Pemula</h3>
-                                <p className="text-gray-700 mb-4 line-clamp-3">
+                        <article className="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-1 flex flex-col h-full">
+
+                            {/* Header Gambar dengan Gradient Emerald */}
+                            <div className="h-56 bg-gradient-to-tr from-emerald-200 to-emerald-500 relative overflow-hidden">
+                                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                            </div>
+
+                            {/* Konten Utama */}
+                            <div className="p-8 flex flex-col flex-grow">
+                                <span className="w-fit inline-block bg-emerald-50 text-emerald-600 font-bold text-xs uppercase tracking-wider px-4 py-1.5 rounded-full mb-4">
+                                    12 Desember 2025
+                                </span>
+
+                                <h3 className="text-xl font-bold text-gray-950 mb-4 leading-snug group-hover:text-emerald-600 transition-colors">
+                                    Metode Menghafal Al-Qur'an yang Efektif untuk Santri Pemula
+                                </h3>
+
+                                <p className="text-gray-600 mb-6 line-clamp-3 text-sm leading-relaxed">
                                     Menghafal Al-Qur'an adalah salah satu amalan paling mulia dalam Islam. Dalam artikel ini, kami akan membahas berbagai metode efektif yang terbukti membantu santri pemula dalam perjalanan tahfidz mereka.
                                 </p>
-                                <div className="text-sm text-gray-600 mb-4">5 menit baca</div>
-                                <a href="#article2" className="text-purple-700 font-semibold hover:text-purple-900">Baca Selengkapnya →</a>
+
+                                {/* Footer Kartu dengan Metadata */}
+                                <div className="flex items-center justify-between pt-6 border-t border-gray-100">
+                                    <span className="text-xs text-gray-400 font-medium">5 menit baca</span>
+                                    <a href="#article2" className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                                        Baca →
+                                    </a>
+                                </div>
                             </div>
                         </article>
 
-                        <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                            <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-48"></div>
-                            <div className="p-6">
-                                <span className="text-sm text-purple-700 font-semibold">12 Desember 2025</span>
-                                <h3 className="text-xl font-bold text-purple-900 mb-3 mt-2">Mengapa Surat Yasin Disebut Qalb Qur'an? Ini Penjelasannya</h3>
-                                <p className="text-gray-700 mb-4 line-clamp-3">
+                        <article className="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-1 flex flex-col h-full">
+
+                            {/* Header Gambar dengan Gradient Emerald */}
+                            <div className="h-56 bg-gradient-to-tr from-emerald-200 to-emerald-500 relative overflow-hidden">
+                                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                            </div>
+
+                            {/* Konten Utama */}
+                            <div className="p-8 flex flex-col flex-grow">
+                                <span className="w-fit inline-block bg-emerald-50 text-emerald-600 font-bold text-xs uppercase tracking-wider px-4 py-1.5 rounded-full mb-4">
+                                    12 Desember 2025
+                                </span>
+
+                                <h3 className="text-xl font-bold text-gray-950 mb-4 leading-snug group-hover:text-emerald-600 transition-colors">
+                                    Mengapa Surat Yasin Disebut Qalb Qur'an? Ini Penjelasannya
+                                </h3>
+
+                                <p className="text-gray-600 mb-6 line-clamp-3 text-sm leading-relaxed">
                                     Surat Yasin memiliki kedudukan istimewa dalam Al-Qur'an. Keistimewaan ini tercermin dari julukan "Qalb Qur'an" atau hati dari Al-Qur'an yang sering disandangnya.
                                 </p>
-                                <div className="text-sm text-gray-600 mb-4">6 menit baca</div>
-                                <a href="#article3" className="text-purple-700 font-semibold hover:text-purple-900">Baca Selengkapnya →</a>
+
+                                {/* Footer Kartu dengan Metadata */}
+                                <div className="flex items-center justify-between pt-6 border-t border-gray-100">
+                                    <span className="text-xs text-gray-400 font-medium">6 menit baca</span>
+                                    <a href="#article3" className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                                        Baca →
+                                    </a>
+                                </div>
                             </div>
                         </article>
 
-                        <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                            <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-48"></div>
-                            <div className="p-6">
-                                <span className="text-sm text-purple-700 font-semibold">11 Desember 2025</span>
-                                <h3 className="text-xl font-bold text-purple-900 mb-3 mt-2">Etika Bertanya Dalam Pembelajaran Al-Qur'an</h3>
-                                <p className="text-gray-700 mb-4 line-clamp-3">
-                                    Bertanya adalah metode pembelajaran yang sangat dianjurkan dalam Islam. Artikel ini membahas etika dan cara yang tepat dalam bertanya selama pembelajaran Al-Qur'an.
+                        <article className="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-1 flex flex-col h-full">
+
+                            {/* Header Gambar dengan Gradient Emerald */}
+                            <div className="h-56 bg-gradient-to-tr from-emerald-200 to-emerald-500 relative overflow-hidden">
+                                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                            </div>
+
+                            {/* Konten Utama */}
+                            <div className="p-8 flex flex-col flex-grow">
+                                <span className="w-fit inline-block bg-emerald-50 text-emerald-600 font-bold text-xs uppercase tracking-wider px-4 py-1.5 rounded-full mb-4">
+                                    11 Desember 2025
+                                </span>
+
+                                <h3 className="text-xl font-bold text-gray-950 mb-4 leading-snug group-hover:text-emerald-600 transition-colors">
+                                    Etika Bertanya Dalam Pembelajaran Al-Qur'an
+                                </h3>
+
+                                <p className="text-gray-600 mb-6 line-clamp-3 text-sm leading-relaxed">
+                                    Bertanya adalah metode pembelajaran yang sangat dianjurkan dalam Islam. Artikel ini membahas etika dan cara yang tepat dalam bertanya selama pembelajaran Al-Qur'an agar lebih produktif dan beradab.
                                 </p>
-                                <div className="text-sm text-gray-600 mb-4">4 menit baca</div>
-                                <a href="#article4" className="text-purple-700 font-semibold hover:text-purple-900">Baca Selengkapnya →</a>
+
+                                {/* Footer Kartu dengan Metadata */}
+                                <div className="mt-auto flex items-center justify-between pt-6 border-t border-gray-100">
+                                    <span className="text-xs text-gray-400 font-medium">4 menit baca</span>
+                                    <a href="#article4" className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                                        Baca →
+                                    </a>
+                                </div>
                             </div>
                         </article>
 
-                        <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                            <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-48"></div>
-                            <div className="p-6">
-                                <span className="text-sm text-purple-700 font-semibold">10 Desember 2025</span>
-                                <h3 className="text-xl font-bold text-purple-900 mb-3 mt-2">Fadail Al-Qur'an: Keutamaan Mempelajari Kitab Suci</h3>
-                                <p className="text-gray-700 mb-4 line-clamp-3">
-                                    Al-Qur'an adalah kalam Allah yang penuh dengan keutamaan dan keajaiban. Dalam artikel ini, kita akan mengenal berbagai fadail atau keutamaan Al-Qur'an.
+                        <article className="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-1 flex flex-col h-full">
+
+                            {/* Header Gambar dengan Gradient Emerald */}
+                            <div className="h-56 bg-gradient-to-tr from-emerald-200 to-emerald-500 relative overflow-hidden">
+                                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                            </div>
+
+                            {/* Konten Utama */}
+                            <div className="p-8 flex flex-col flex-grow">
+                                <span className="w-fit inline-block bg-emerald-50 text-emerald-600 font-bold text-xs uppercase tracking-wider px-4 py-1.5 rounded-full mb-4">
+                                    10 Desember 2025
+                                </span>
+
+                                <h3 className="text-xl font-bold text-gray-950 mb-4 leading-snug group-hover:text-emerald-600 transition-colors">
+                                    Fadail Al-Qur'an: Keutamaan Mempelajari Kitab Suci
+                                </h3>
+
+                                <p className="text-gray-600 mb-6 line-clamp-3 text-sm leading-relaxed">
+                                    Al-Qur'an adalah kalam Allah yang penuh dengan keutamaan dan keajaiban. Dalam artikel ini, kita akan mengenal berbagai fadail atau keutamaan Al-Qur'an bagi kehidupan seorang mukmin.
                                 </p>
-                                <div className="text-sm text-gray-600 mb-4">7 menit baca</div>
-                                <a href="#article5" className="text-purple-700 font-semibold hover:text-purple-900">Baca Selengkapnya →</a>
+
+                                {/* Footer Kartu dengan Metadata */}
+                                <div className="flex items-center justify-between pt-6 border-t border-gray-100">
+                                    <span className="text-xs text-gray-400 font-medium">7 menit baca</span>
+                                    <a href="#article5" className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                                        Baca →
+                                    </a>
+                                </div>
                             </div>
                         </article>
 
-                        <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                            <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-48"></div>
-                            <div className="p-6">
-                                <span className="text-sm text-purple-700 font-semibold">9 Desember 2025</span>
-                                <h3 className="text-xl font-bold text-purple-900 mb-3 mt-2">Tartil: Cara Membaca Al-Qur'an dengan Indah dan Benar</h3>
-                                <p className="text-gray-700 mb-4 line-clamp-3">
+                        <article className="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-1 flex flex-col h-full">
+
+                            {/* Header Gambar dengan Gradient Emerald */}
+                            <div className="h-56 bg-gradient-to-tr from-emerald-200 to-emerald-500 relative overflow-hidden">
+                                <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                            </div>
+
+                            {/* Konten Utama */}
+                            <div className="p-8 flex flex-col flex-grow">
+                                <span className="w-fit inline-block bg-emerald-50 text-emerald-600 font-bold text-xs uppercase tracking-wider px-4 py-1.5 rounded-full mb-4">
+                                    9 Desember 2025
+                                </span>
+
+                                <h3 className="text-xl font-bold text-gray-950 mb-4 leading-snug group-hover:text-emerald-600 transition-colors">
+                                    Tartil: Cara Membaca Al-Qur'an dengan Indah dan Benar
+                                </h3>
+
+                                <p className="text-gray-600 mb-6 line-clamp-3 text-sm leading-relaxed">
                                     Tartil adalah membaca Al-Qur'an dengan perlahan dan merenungkan setiap ayatnya. Metode ini tidak hanya meningkatkan pemahaman tetapi juga kekhusyukan dalam membaca.
                                 </p>
-                                <div className="text-sm text-gray-600 mb-4">6 menit baca</div>
-                                <a href="#article6" className="text-purple-700 font-semibold hover:text-purple-900">Baca Selengkapnya →</a>
+
+                                {/* Footer Kartu dengan Metadata */}
+                                <div className="flex items-center justify-between pt-6 border-t border-gray-100">
+                                    <span className="text-xs text-gray-400 font-medium">6 menit baca</span>
+                                    <a href="#article6" className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                                        Baca →
+                                    </a>
+                                </div>
                             </div>
                         </article>
 
-                        <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
-                            <div className="bg-gradient-to-r from-purple-400 to-purple-600 h-48"></div>
-                            <div className="p-6">
-                                <span className="text-sm text-purple-700 font-semibold">8 Desember 2025</span>
-                                <h3 className="text-xl font-bold text-purple-900 mb-3 mt-2">Interaksi Orang Tua dalam Mendampingi Tahfidz Anak</h3>
-                                <p className="text-gray-700 mb-4 line-clamp-3">
-                                    Peran orang tua sangat penting dalam mendukung program tahfidz anak. Artikel ini memberikan panduan praktis bagi orang tua dalam mendampingi anak tahfidz.
+                        {/* Tambahkan flex flex-col h-full di sini */}
+                        <article className="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-1 flex flex-col h-full">
+
+                            {/* Header Gambar */}
+                            <div className="h-56 bg-gradient-to-tr from-emerald-200 to-emerald-500 relative overflow-hidden"></div>
+
+                            {/* Konten Utama */}
+                            <div className="p-8 flex flex-col flex-grow"> {/* flex-grow memastikan container ini mengisi ruang kosong */}
+                                <span className="w-fit inline-block bg-emerald-50 text-emerald-600 font-bold text-xs uppercase tracking-wider px-4 py-1.5 rounded-full mb-4">
+                                    8 Desember 2025
+                                </span>
+
+                                <h3 className="text-xl font-bold text-gray-950 mb-4 leading-snug group-hover:text-emerald-600 transition-colors">
+                                    Interaksi Orang Tua dalam Mendampingi Tahfidz Anak
+                                </h3>
+
+                                <p className="text-gray-600 mb-6 line-clamp-3 text-sm leading-relaxed">
+                                    Peran orang tua sangat krusial dalam mendukung program tahfidz anak...
                                 </p>
-                                <div className="text-sm text-gray-600 mb-4">5 menit baca</div>
-                                <a href="#article7" className="text-purple-700 font-semibold hover:text-purple-900">Baca Selengkapnya →</a>
+
+                                {/* Footer Kartu - mt-auto akan mendorong elemen ini ke bawah */}
+                                <div className="mt-auto flex items-center justify-between pt-6 border-t border-gray-100">
+                                    <span className="text-xs text-gray-400 font-medium">5 menit baca</span>
+                                    <a href="#article7" className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                                        Baca →
+                                    </a>
+                                </div>
                             </div>
                         </article>
                     </div>
 
                     {/* <!-- Pagination --> */}
-                    <div className="flex justify-center gap-2 mb-16">
-                        <button className="bg-purple-700 text-white px-4 py-2 rounded-lg hover:bg-purple-800">1</button>
-                        <button className="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300">2</button>
-                        <button className="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300">3</button>
-                        <button className="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-300">→</button>
+                    <div className="flex justify-center items-center gap-2 mb-20">
+                        {/* Tombol Sebelumnya (Opsional: bisa disembunyikan jika di halaman pertama) */}
+                        <button className="w-10 h-10 flex items-center justify-center rounded-xl bg-gray-100 text-gray-500 hover:bg-emerald-50 hover:text-emerald-600 transition-all">
+                            ←
+                        </button>
+
+                        {/* Angka Halaman */}
+                        {[1, 2, 3].map((page) => (
+                            <button
+                                key={page}
+                                className={`w-10 h-10 flex items-center justify-center rounded-xl font-bold transition-all ${page === 1
+                                        ? "bg-emerald-600 text-white shadow-lg shadow-emerald-600/20"
+                                        : "bg-gray-100 text-gray-600 hover:bg-emerald-50 hover:text-emerald-600"
+                                    }`}
+                            >
+                                {page}
+                            </button>
+                        ))}
+
+                        {/* Tombol Selanjutnya */}
+                        <button className="w-10 h-10 flex items-center justify-center rounded-xl bg-gray-100 text-gray-600 hover:bg-emerald-50 hover:text-emerald-600 transition-all">
+                            →
+                        </button>
                     </div>
                 </div>
             </section>
