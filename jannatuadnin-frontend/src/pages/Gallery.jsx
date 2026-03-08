@@ -17,6 +17,9 @@ import ig1 from "../assets/img/ig1.jpg"
 import ig2 from "../assets/img/ig2.jpg"
 import ig3 from "../assets/img/ig3.jpg"
 import ig4 from "../assets/img/ig4.jpg"
+import vid1 from "../assets/video/vid1.mp4"
+import vid2 from "../assets/video/vid2.mp4"
+import vid3 from "../assets/video/vid3.mp4"
 
 
 const Gallery = () => {
@@ -303,9 +306,13 @@ const Gallery = () => {
                         {/* Video 1 */}
                         <div className="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2">
                             <div className="relative h-56 bg-gradient-to-tr from-emerald-200 to-emerald-600 flex items-center justify-center overflow-hidden">
-                                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                                    <span className="text-white text-2xl">▶</span>
-                                </div>
+                                <video
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    src={vid1} // Pastikan sudah mengimpor video Anda di atas
+                                    controls
+                                    poster={khatam} 
+                                >
+                                </video>
                             </div>
                             <div className="p-8">
                                 <h3 className="font-bold text-gray-950 mb-3 group-hover:text-emerald-600 transition-colors">Video Profile Rumah Qur'an</h3>
@@ -317,9 +324,13 @@ const Gallery = () => {
                         {/* Video 2 */}
                         <div className="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2">
                             <div className="relative h-56 bg-gradient-to-tr from-emerald-200 to-emerald-600 flex items-center justify-center overflow-hidden">
-                                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                                    <span className="text-white text-2xl">▶</span>
-                                </div>
+                                <video
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    src={vid2} 
+                                    controls
+                                    poster={pembelajaran} 
+                                >
+                                </video>
                             </div>
                             <div className="p-8">
                                 <h3 className="font-bold text-gray-950 mb-3 group-hover:text-emerald-600 transition-colors">Testimoni Santri</h3>
@@ -331,9 +342,13 @@ const Gallery = () => {
                         {/* Video 3 */}
                         <div className="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2">
                             <div className="relative h-56 bg-gradient-to-tr from-emerald-200 to-emerald-600 flex items-center justify-center overflow-hidden">
-                                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                                    <span className="text-white text-2xl">▶</span>
-                                </div>
+                                <video
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    src={vid3}
+                                    controls
+                                    poster={pembukaan} 
+                                >
+                                </video>
                             </div>
                             <div className="p-8">
                                 <h3 className="font-bold text-gray-950 mb-3 group-hover:text-emerald-600 transition-colors">Tayangan Khataman</h3>

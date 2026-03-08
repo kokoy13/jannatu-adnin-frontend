@@ -1,5 +1,7 @@
-const Footer = () =>{
-    return(
+import { Link } from 'react-router-dom';
+
+const Footer = () => {
+    return (
         <footer className="bg-gray-900 text-gray-300 py-12">
             <div className="max-w-6xl mx-auto px-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -10,10 +12,10 @@ const Footer = () =>{
                     <div>
                         <h3 className="text-white font-semibold mb-4">Navigasi</h3>
                         <ul className="space-y-2">
-                            <li><a href="index.html" className="hover:text-purple-400">Home</a></li>
-                            <li><a href="about.html" className="hover:text-purple-400">About Us</a></li>
-                            <li><a href="articles.html" className="hover:text-purple-400">Articles</a></li>
-                            <li><a href="gallery.html" className="hover:text-purple-400">Gallery</a></li>
+                            <li><Link to="/" className="hover:text-purple-400">Home</Link></li>
+                            <li><Link to="/tentangkami" className="hover:text-purple-400">About Us</Link></li>
+                            <li><Link to="/artikel" className="hover:text-purple-400">Articles</Link></li>
+                            <li><Link to="/galeri" className="hover:text-purple-400">Gallery</Link></li>
                         </ul>
                     </div>
                     <div>
