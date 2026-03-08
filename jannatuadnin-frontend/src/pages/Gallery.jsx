@@ -249,43 +249,57 @@ const Gallery = () => {
             </section>
 
             {/* <!-- Video Section --> */}
-            <section className="py-20 bg-white">
-                <div className="max-w-6xl mx-auto px-4">
-                    <h2 className="text-4xl font-bold text-center text-purple-900 mb-12">Video Dokumentasi</h2>
+            {/* */}
+            <section className="py-24 bg-white">
+                <div className="max-w-6xl mx-auto px-6">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-gray-950 text-center mb-16">
+                        Video Dokumentasi
+                    </h2>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="bg-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                            <div className="bg-gradient-to-br from-purple-400 to-purple-600 h-48 flex items-center justify-center">
-                                <span className="text-white text-5xl">▶</span>
+
+                        {/* Video 1 */}
+                        <div className="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2">
+                            <div className="relative h-56 bg-gradient-to-tr from-emerald-200 to-emerald-600 flex items-center justify-center overflow-hidden">
+                                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <span className="text-white text-2xl">▶</span>
+                                </div>
                             </div>
-                            <div className="p-6">
-                                <h3 className="font-bold text-purple-900 mb-2">Video Profile Rumah Qur'an</h3>
-                                <p className="text-gray-700 text-sm mb-4">Pengenalan lengkap tentang Rumah Qur'an Zawiyah Sakinah</p>
-                                <button className="text-purple-700 font-semibold hover:text-purple-900">Tonton Video →</button>
+                            <div className="p-8">
+                                <h3 className="font-bold text-gray-950 mb-3 group-hover:text-emerald-600 transition-colors">Video Profile Rumah Qur'an</h3>
+                                <p className="text-gray-600 text-sm mb-6 leading-relaxed">Pengenalan lengkap tentang Rumah Qur'an Jannatu Adnin.</p>
+                                <button className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">Tonton Video →</button>
                             </div>
                         </div>
 
-                        <div className="bg-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                            <div className="bg-gradient-to-br from-purple-500 to-purple-700 h-48 flex items-center justify-center">
-                                <span className="text-white text-5xl">▶</span>
+                        {/* Video 2 */}
+                        <div className="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2">
+                            <div className="relative h-56 bg-gradient-to-tr from-emerald-200 to-emerald-600 flex items-center justify-center overflow-hidden">
+                                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <span className="text-white text-2xl">▶</span>
+                                </div>
                             </div>
-                            <div className="p-6">
-                                <h3 className="font-bold text-purple-900 mb-2">Testimoni Santri</h3>
-                                <p className="text-gray-700 text-sm mb-4">Kisah inspiratif dari santri-santri Rumah Qur'an</p>
-                                <button className="text-purple-700 font-semibold hover:text-purple-900">Tonton Video →</button>
+                            <div className="p-8">
+                                <h3 className="font-bold text-gray-950 mb-3 group-hover:text-emerald-600 transition-colors">Testimoni Santri</h3>
+                                <p className="text-gray-600 text-sm mb-6 leading-relaxed">Kisah inspiratif dari santri-santri Rumah Qur'an.</p>
+                                <button className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">Tonton Video →</button>
                             </div>
                         </div>
 
-                        <div className="bg-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-                            <div className="bg-gradient-to-br from-purple-600 to-purple-800 h-48 flex items-center justify-center">
-                                <span className="text-white text-5xl">▶</span>
+                        {/* Video 3 */}
+                        <div className="group bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2">
+                            <div className="relative h-56 bg-gradient-to-tr from-emerald-200 to-emerald-600 flex items-center justify-center overflow-hidden">
+                                <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                    <span className="text-white text-2xl">▶</span>
+                                </div>
                             </div>
-                            <div className="p-6">
-                                <h3 className="font-bold text-purple-900 mb-2">Tayangan Khataman</h3>
-                                <p className="text-gray-700 text-sm mb-4">Moment spesial pelaksanaan khataman Al-Qur'an</p>
-                                <button className="text-purple-700 font-semibold hover:text-purple-900">Tonton Video →</button>
+                            <div className="p-8">
+                                <h3 className="font-bold text-gray-950 mb-3 group-hover:text-emerald-600 transition-colors">Tayangan Khataman</h3>
+                                <p className="text-gray-600 text-sm mb-6 leading-relaxed">Moment spesial pelaksanaan khataman Al-Qur'an.</p>
+                                <button className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">Tonton Video →</button>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
