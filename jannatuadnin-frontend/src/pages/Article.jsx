@@ -10,7 +10,7 @@ const Article = () => {
             {/* <!-- Hero Section --> */}
             <section className="pt-35 pb-20 bg-white relative overflow-hidden">
                 {/* Elemen Dekoratif Background */}
-                <div className="absolute top-0 right-0 w-80 h-80 bg-emerald-100 rounded-full blur-3xl opacity-40 -mr-20 -mt-20"></div>
+                <div className="absolute top-0 right-0 w-80 h-80  rounded-full blur-3xl opacity-40 -mr-20 -mt-20"></div>
 
                 <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
                     <h1 className="text-4xl md:text-5xl font-extrabold text-gray-950 mb-6 leading-tight">
@@ -56,7 +56,7 @@ const Article = () => {
                                         <span className="text-gray-900 font-semibold">12 Desember 2025</span> • 8 menit baca
                                     </p>
 
-                                    <a href="#article1" className="bg-emerald-600 text-white px-8 py-3 rounded-2xl font-semibold hover:bg-emerald-700 transition-all shadow-lg shadow-emerald-600/20 active:scale-95">
+                                    <a href="#article1" className="bg-green-600 text-white px-8 py-3 rounded-2xl font-semibold hover:bg-green-700 transition-all shadow-lg shadow-green-600/20 active:scale-95">
                                         Baca Selengkapnya →
                                     </a>
                                 </div>
