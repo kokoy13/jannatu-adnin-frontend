@@ -7,6 +7,7 @@ import arti4 from "../assets/img/arti4.jpg"
 import arti5 from "../assets/img/arti5.jpg"
 import arti6 from "../assets/img/arti6.jpg"
 import arti7 from "../assets/img/arti7.jpg"
+import { Link } from 'react-router-dom';
 
 const Article = () => {
     return (
@@ -34,11 +35,11 @@ const Article = () => {
             <section className="py-15 bg-white">
                 <div className="max-w-6xl mx-auto px-4">
                     {/* <!-- Featured Article --> */}
-                    <div className="mb-16 bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2">
-                        <div className="grid grid-cols-1 md:grid-cols-3">
+                    <div className="mb-16 bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden transition-all duration-500 hover:shadow-xl hover:shadow-emerald-950/5 hover:-translate-y-2 flex flex-col">
+                        <div className="grid grid-cols-1 md:grid-cols-3 flex-grow">
 
-                            {/* Kolom Gambar/Aksen */}
-                            <div className="md:col-span-1 h-64 md:h-auto overflow-hidden rounded-r-3xl">
+                            {/* Kolom Gambar */}
+                            <div className="md:col-span-1 h-64 md:h-auto overflow-hidden">
                                 <img
                                     src={arti1}
                                     alt="Foto Kegiatan"
@@ -46,33 +47,33 @@ const Article = () => {
                                 />
                             </div>
 
-                            {/* Kolom Konten */}
-                            <div className="md:col-span-2 p-8 md:p-12">
-                                <span className="inline-block bg-emerald-50 text-emerald-600 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6">
+                            {/* Kolom Konten - Kita gunakan flex flex-col agar bisa push footer ke bawah */}
+                            <div className="md:col-span-2 p-8 md:p-12 flex flex-col">
+
+                                {/* Label Artikel */}
+                                <span className="inline-block bg-emerald-50 text-emerald-600 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 w-fit">
                                     Artikel Unggulan
                                 </span>
 
+                                {/* Judul & Deskripsi */}
                                 <h2 className="text-3xl md:text-4xl font-extrabold text-gray-950 mb-6 leading-tight">
                                     Sejarah Turunnya Al-Qur'an: Dari Gua Hira hingga Generasi Muslim Kini
                                 </h2>
-
                                 <p className="text-gray-600 mb-8 leading-relaxed text-lg">
-                                    Al-Qur'an adalah kitab suci umat Islam yang menjadi pedoman hidup dalam berbagai aspek kehidupan.
-                                    Perjalanan sejarah ini mencerminkan kebijaksanaan Allah dalam menyampaikan petunjuk kepada umatnya,
-                                    dimulai dari wahyu pertama di Gua Hira hingga terjaga hingga saat ini.
+                                    Al-Qur'an adalah kitab suci umat Islam yang menjadi pedoman hidup dalam berbagai aspek kehidupan.Perjalanan sejarah ini mencerminkan kebijaksanaan Allah dalam menyampaikan petunjuk kepada umatnya dimulai dari wahyu pertama di Gua Hira hingga terjaga hingga saat ini..
                                 </p>
 
-                                <div className="flex items-center justify-between mt-8 border-t border-gray-100 pt-8">
+                                {/* FOOTER KARTU (Dibuat otomatis ke bawah dengan mt-auto) */}
+                                <div className="mt-auto pt-8 border-t border-gray-100 flex items-center justify-between">
                                     <p className="text-gray-500 text-sm font-medium">
                                         <span className="text-gray-900 font-semibold">12 Desember 2025</span> • 8 menit baca
                                     </p>
 
-                                    <a href="#article1" className="bg-green-600 text-white px-8 py-3 rounded-2xl font-semibold hover:bg-green-700 transition-all shadow-lg shadow-green-600/20 active:scale-95">
+                                    <Link to="/artikel/1" className="bg-green-600 text-white px-8 py-3 rounded-2xl font-semibold hover:bg-green-700 transition-all shadow-lg shadow-green-600/20 active:scale-95">
                                         Baca Selengkapnya →
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -108,9 +109,12 @@ const Article = () => {
                                 {/* Footer Kartu dengan Metadata */}
                                 <div className="flex items-center justify-between pt-6 border-t border-gray-100">
                                     <span className="text-xs text-gray-400 font-medium">5 menit baca</span>
-                                    <a href="#article2" className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                                    <Link
+                                        to="/artikel/2"
+                                        className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all"
+                                    >
                                         Baca →
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </article>
@@ -145,9 +149,12 @@ const Article = () => {
                                 {/* Footer Kartu dengan Metadata */}
                                 <div className="flex items-center justify-between pt-6 border-t border-gray-100">
                                     <span className="text-xs text-gray-400 font-medium">6 menit baca</span>
-                                    <a href="#article3" className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                                    <Link
+                                        to="/artikel/3"
+                                        className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all"
+                                    >
                                         Baca →
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </article>
@@ -182,9 +189,12 @@ const Article = () => {
                                 {/* Footer Kartu dengan Metadata */}
                                 <div className="mt-auto flex items-center justify-between pt-6 border-t border-gray-100">
                                     <span className="text-xs text-gray-400 font-medium">4 menit baca</span>
-                                    <a href="#article4" className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                                    <Link
+                                        to="/artikel/4"
+                                        className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all"
+                                    >
                                         Baca →
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </article>
@@ -219,9 +229,12 @@ const Article = () => {
                                 {/* Footer Kartu dengan Metadata */}
                                 <div className="flex items-center justify-between pt-6 border-t border-gray-100">
                                     <span className="text-xs text-gray-400 font-medium">7 menit baca</span>
-                                    <a href="#article5" className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                                    <Link
+                                        to="/artikel/5"
+                                        className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all"
+                                    >
                                         Baca →
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </article>
@@ -255,9 +268,12 @@ const Article = () => {
                                 {/* Footer Kartu dengan Metadata */}
                                 <div className="flex items-center justify-between pt-6 border-t border-gray-100">
                                     <span className="text-xs text-gray-400 font-medium">6 menit baca</span>
-                                    <a href="#article6" className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                                    <Link
+                                        to="/artikel/6"
+                                        className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all"
+                                    >
                                         Baca →
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </article>
@@ -291,9 +307,12 @@ const Article = () => {
                                 {/* Footer Kartu - mt-auto akan mendorong elemen ini ke bawah */}
                                 <div className="mt-auto flex items-center justify-between pt-6 border-t border-gray-100">
                                     <span className="text-xs text-gray-400 font-medium">5 menit baca</span>
-                                    <a href="#article7" className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                                    <Link
+                                        to="/artikel/7"
+                                        className="text-emerald-600 font-bold text-sm flex items-center gap-1 hover:gap-2 transition-all"
+                                    >
                                         Baca →
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </article>

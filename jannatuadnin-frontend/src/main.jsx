@@ -7,6 +7,7 @@ import Gallery from './pages/Gallery'
 import Article from './pages/Article'
 import About from './pages/About'
 import Announcement from './pages/Announcement'
+import ArticleDetail from './pages/ArticleDetail' 
 
 // const ProtectedRoute = ({ children }) => {
 //   const token = localStorage.getItem("token")
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
         <Article/>
       // </ProtectedRoute>
     )
+  },
+  {
+    path: "/artikel/:id", 
+    element: <ArticleDetail />, 
   },
   {
     path: "/tentangkami",
