@@ -7,7 +7,8 @@ import Gallery from './pages/Gallery'
 import Article from './pages/Article'
 import About from './pages/About'
 import Announcement from './pages/Announcement'
-import ArticleDetail from './pages/ArticleDetail' 
+import ArticleDetail from './pages/ArticleDetail'
+import Donasi from './pages/Donasi'
 
 // const ProtectedRoute = ({ children }) => {
 //   const token = localStorage.getItem("token")
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       // <ProtectedRoute>
-        <Home/>
+      <Home />
       // </ProtectedRoute>
     )
   },
@@ -42,7 +43,7 @@ const router = createBrowserRouter([
     path: "/galeri",
     element: (
       // <ProtectedRoute>
-        <Gallery/>
+      <Gallery />
       // </ProtectedRoute>
     )
   },
@@ -50,19 +51,23 @@ const router = createBrowserRouter([
     path: "/artikel",
     element: (
       // <ProtectedRoute>
-        <Article/>
+      <Article />
       // </ProtectedRoute>
     )
   },
   {
-    path: "/artikel/:id", 
-    element: <ArticleDetail />, 
+    path: "/artikel/:id",
+    element: <ArticleDetail />,
+  },
+  {
+    path: "/donasi",
+    element: <Donasi />,
   },
   {
     path: "/tentangkami",
     element: (
       // <ProtectedRoute>
-        <About/>
+      <About />
       // </ProtectedRoute>
     )
   },
@@ -70,7 +75,7 @@ const router = createBrowserRouter([
     path: "/pengumuman",
     element: (
       // <ProtectedRoute>
-        <Announcement/>
+      <Announcement />
       // </ProtectedRoute>
     )
   },
@@ -83,6 +88,6 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </StrictMode>,
 )

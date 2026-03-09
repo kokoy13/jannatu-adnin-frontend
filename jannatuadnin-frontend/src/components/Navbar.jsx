@@ -52,7 +52,7 @@ export default function Navbar() {
 
                 <ul className="flex gap-8 text-gray-700 font-medium">
                     <li>
-                        <Link className="bg-green-600 hover:bg-green-700 transition-all duration-200 px-5 py-2 text-white rounded-full">
+                        <Link to="/donasi" className="bg-green-600 hover:bg-green-700 transition-all duration-200 px-5 py-2 text-white rounded-full">
                             Donasi
                         </Link>
                     </li>
